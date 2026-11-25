@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#2b1d12">
+<meta name="description" content="Eat one cookie per day. Resets daily at 08:00 UTC.">
+<title>Daily Cookie</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>🍪 Daily Cookie</h1>
+
+    <div class="counter">
+      <span id="count">0</span>
+      <span class="counter-label">cookies eaten</span>
+    </div>
+
+    <div id="cookie-area">
+      <!-- Big clickable cookie (whole) -->
+      <button id="cookie" aria-label="Eat the daily cookie">
+        <svg viewBox="0 0 200 200" class="cookie-svg" id="cookie-svg">
+          <!-- whole cookie: circle + chips -->
+          <circle cx="100" cy="100" r="90" fill="#c98a4b"/>
+          <circle cx="100" cy="100" r="90" fill="url(#shade)"/>
+          <circle cx="66" cy="70" r="13" fill="#5b3a1e"/>
+          <circle cx="120" cy="55" r="10" fill="#5b3a1e"/>
+          <circle cx="150" cy="105" r="12" fill="#5b3a1e"/>
+          <circle cx="95" cy="140" r="11" fill="#5b3a1e"/>
+          <circle cx="55" cy="115" r="9" fill="#5b3a1e"/>
+          <circle cx="130" cy="150" r="8" fill="#5b3a1e"/>
+          <defs>
+            <radialGradient id="shade" cx="35%" cy="30%">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#000000" stop-opacity="0.12"/>
+            </radialGradient>
+          </defs>
+        </svg>
+      </button>
+
+      <!-- Full-size bitten cookie shown after clicking (hidden by default) -->
+      <div id="bitten" class="bitten hidden">
+        <svg viewBox="0 0 200 200" class="cookie-svg">
+          <!-- bitten cookie: circle with a bite cut out top-right -->
+          <path id="bite-path" fill="#c98a4b" d="M100,10 A90,90 0 1,0 190,100 L162,100 A18,18 0 0,1 128,88 A18,18 0 0,1 94,76 A18,18 0 0,1 100,10 Z"/>
+          <circle cx="60" cy="70" r="12" fill="#5b3a1e"/>
+          <circle cx="110" cy="140" r="11" fill="#5b3a1e"/>
+          <circle cx="55" cy="125" r="9" fill="#5b3a1e"/>
+          <circle cx="120" cy="95" r="8" fill="#5b3a1e"/>
+          <circle cx="150" cy="140" r="10" fill="#5b3a1e"/>
+          <circle cx="80" cy="45" r="7" fill="#5b3a1e"/>
+        </svg>
+        <p class="bitten-text">Nom! 🍪 Come back after the next reset.</p>
+      </div>
+    </div>
+
+    <div class="status">
+      <p id="status-text">Your cookie is ready!</p>
+      <p id="countdown" class="countdown"></p>
+      <p class="reset-info">Resets daily at 8:00 UTC</p>
+    </div>
+
+    <button id="reset-data" class="reset-data" title="Clear saved progress">Reset my data</button>
+  </div>
+
+  <div id="crumb-layer"></div>
+
+  <script src="game.js"></script>
+  <script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");</script>
+</body>
+</html>
