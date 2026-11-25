@@ -1,5 +1,5 @@
 {
-  "packageId": "io.github.yunerim.twa",
+  "packageId": "com.dlycookie.app",
   "host": "yunerim.github.io",
   "name": "Daily Cookie",
   "launcherName": "Cookie",
@@ -21,8 +21,8 @@
     "path": "C:\\Users\\Geewen Egg\\Desktop\\App\\android.keystore",
     "alias": "android"
   },
-  "appVersionName": "1",
-  "appVersionCode": 1,
+  "appVersionName": "2",
+  "appVersionCode": 2,
   "shortcuts": [],
   "generatorApp": "bubblewrap-cli",
   "webManifestUrl": "https://yunerim.github.io/App/manifest.json",
@@ -44,5 +44,5 @@
   "fileHandlers": [],
   "launchHandlerClientMode": "",
   "displayOverride": [],
-  "appVersion": "1"
+  "appVersion": "2"
 }
