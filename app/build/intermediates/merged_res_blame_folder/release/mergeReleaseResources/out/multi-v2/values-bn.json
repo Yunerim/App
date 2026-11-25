@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "io.github.yunerim.twa.app-mergeReleaseResources-25:/values-bn/values-bn.xml",
+            "outputFile": "com.dlycookie.app-mergeReleaseResources-25:/values-bn/values-bn.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Geewen Egg\\.gradle\\caches\\8.11.1\\transforms\\49e33416d546bb21d02889a3b399b693\\transformed\\browser-1.10.0\\res\\values-bn\\values-bn.xml",

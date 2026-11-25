@@ -29,6 +29,6 @@
     <string name="launchUrl" translatable="false">https://yunerim.github.io/App/index.html</string>
     <string name="launcherName" translatable="false">Cookie</string>
     <string name="orientation" translatable="false">any</string>
-    <string name="providerAuthority" translatable="false">io.github.yunerim.twa.fileprovider</string>
+    <string name="providerAuthority" translatable="false">com.dlycookie.app.fileprovider</string>
     <string name="webManifestUrl" translatable="false">https://yunerim.github.io/App/manifest.json</string>
 </resources>

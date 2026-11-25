@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "io.github.yunerim.twa.app-mergeReleaseResources-25:/values-si/values-si.xml",
+            "outputFile": "com.dlycookie.app-mergeReleaseResources-25:/values-si/values-si.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Geewen Egg\\.gradle\\caches\\8.11.1\\transforms\\62aab3209602a2c2ee14a1bdf8ec79b2\\transformed\\androidbrowserhelper-2.7.4\\res\\values-si\\values-si.xml",
